@@ -25,7 +25,7 @@ import java.net.URL;
  * To change this template use File | Settings | File Templates.
  */
 public class WebDriverFactory{
-    private static final Logger logger = LoggerFactory.getLogger(WebDriverFactory.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(WebDriverFactory.class);
     private static final ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
 
 
@@ -36,6 +36,7 @@ public class WebDriverFactory{
         DesiredCapabilities mergeCapabilities = getDefaultCapabilities();
         WebDriver driver = getDriverForCapabilities(mergeCapabilities);
         webDriver.set(driver);
+
         logger.info("初始化浏览器。");
         return driver;
     }

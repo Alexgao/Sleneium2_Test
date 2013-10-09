@@ -15,7 +15,7 @@ public class ConfigProfile {
     public static Boolean useFireBug = false;
     public static Enum browser = Driver.FIREFOX ;
     public static URL remoteDriverURL=null;
-    public static int waitTimeOut = 1000;
+    public static int waitTimeOut = 5;
     public static String firebugPath = "src/...";
     public static String firefoxBinary="C:/Program Files/Mozilla Firefox/firefox.exe";
     public static String chromeBinary="src/main/java/resource/chrome/chromedriver.exe";

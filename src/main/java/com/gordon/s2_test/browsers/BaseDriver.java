@@ -61,10 +61,10 @@ public class BaseDriver implements Browser {
 
         if(width > maxWidth || height > maxHeight){
             maxWindow();
-            logger.warn("抱歉，当前窗口指定值过大，将自动跳转到默认最大化。");
+            logger.warn("警告，当前窗口指定值过大，将自动跳转到默认最大化。");
         }else if (width < 10 || height < 10){
             maxWindow();
-            logger.warn("抱歉，指定值不能小于10.");
+            logger.warn("警告，指定值不能小于10.");
         }else {
             this.webDriver.manage().window().setSize(new Dimension(width,height));
             logger.info("设置成功，当前窗口宽为："+width+"\t高为："+height);
@@ -109,7 +109,7 @@ public class BaseDriver implements Browser {
         if (element != null || !element.toString().equals("")){
             element.click();
         }else {
-            logger.warn("抱歉，给出的指定元素为空。");
+            logger.warn("警告，给出的指定元素为空。");
         }
     }
 
@@ -125,7 +125,7 @@ public class BaseDriver implements Browser {
         if (!element.toString().equals("")||element != null){
             element.click();
         }else {
-            logger.error("没有找到指定元素，{}为：{}",by.getClass().getSimpleName(),by.toString());
+            logger.error("没有找到指定元素，{}",by.toString());
         }
 
     }
@@ -144,7 +144,7 @@ public class BaseDriver implements Browser {
     public WebElement findElement(By by){
         WebElement element = this.webDriver.findElement(by);
         if (element.toString().equals("")||element == null){
-            logger.error("没有找到指定的元素，{}为：{}",by.getClass().getSimpleName(),by.toString());
+            logger.error("错误，没有找到指定的元素，{}",by.toString());
             return null;
         }
         return element;
@@ -163,10 +163,10 @@ public class BaseDriver implements Browser {
         }else {
             List<WebElement> elements = this.webDriver.findElements(By.name(nameOrId));
             if (elements.size()>1){
-                logger.warn("请注意，你给定的\"name\"为\"{}\"的元素不止一个，我们将默认返回第一个给你。",nameOrId);
+                logger.warn("警告，你给定的\"name\"为\"{}\"的元素不止一个，我们将默认返回第一个给你。",nameOrId);
                 return elements.get(0);
             }else if (elements.size() < 1 || elements.get(0) == null){
-                logger.error("抱歉，你所给出的Id或者Name为{}的元素不存在。",nameOrId);
+                logger.error("错误，你所给出的Id或者Name为{}的元素不存在。",nameOrId);
                 return null;
             }else {
                 return elements.get(0);
@@ -185,7 +185,7 @@ public class BaseDriver implements Browser {
     public List<WebElement> findElements(By by){
         List<WebElement> elements = this.webDriver.findElements(by);
         if (elements.size() < 1 || elements.get(0) == null){
-            logger.error("抱歉，你所给出的{}为{}的元素并不存在。",by.getClass().getSimpleName(),by.toString());
+            logger.error("错误，你所给出的{}为{}的元素并不存在。",by.getClass().getSimpleName(),by.toString());
             return null;
         }else {
             return elements;
@@ -245,7 +245,7 @@ public class BaseDriver implements Browser {
      */
     @Override
     public WebElement waitForElementsVisible(final String elementDescription, final By by ,final int waitTimeOut) {
-        return waitForCondition(elementDescription + "是显示的。",waitTimeOut,
+        return waitForCondition(elementDescription + "不显示。",waitTimeOut,
             new ExpectedCondition<WebElement>() {
                 @Override
                 public WebElement apply(final WebDriver driver) {
@@ -273,7 +273,7 @@ public class BaseDriver implements Browser {
 
     @Override
     public WebElement waitForElementsPresent(final String elementDescription,final By by,final int waitTimeOut) {
-        return waitForCondition(elementDescription + "是存在的。",waitTimeOut,
+        return waitForCondition(elementDescription + "不存在。",waitTimeOut,
                 new ExpectedCondition<WebElement>() {
                     @Override
                     public WebElement apply(WebDriver driver) {
@@ -479,7 +479,7 @@ public class BaseDriver implements Browser {
 
 
     public <T> T waitForCondition(String description , int waitTimeOut , ExpectedCondition<T> expectedCondition){
-        final int timeOut = waitTimeOut < 500 ? ConfigProfile.waitTimeOut : waitTimeOut;
+        final int timeOut = waitTimeOut < 5 ? ConfigProfile.waitTimeOut : waitTimeOut;
 
         FluentWait<WebDriver> wait = new WebDriverWait(getDriver() , timeOut);
         wait.withMessage(description);
