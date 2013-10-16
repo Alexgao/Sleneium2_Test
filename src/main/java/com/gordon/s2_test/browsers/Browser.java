@@ -49,7 +49,7 @@ public interface Browser {
 
     void selectFrame(WebElement element);
 
-    void selectFrame(String nameOrId);
+    void selectFrame(String id);
 
     void selectFrame(int index);
 
@@ -57,30 +57,60 @@ public interface Browser {
     void selectDefaultWindow();
 
     //运行JavaScript
-    JavascriptExecutor runJS();
+    JavascriptExecutor js();
+
+    Object executeScript(String script);
+
+    String executeScriptGetValue(String script);
+
 
     //清理所有Cookies
     void clearAllCookies();
 
     void clearCookies(Cookie cookie);
 
+    //获取Cookies
+    Set<Cookie> getCookies();
+
+    Cookie getCookieNamed(String cookieName);
+
+
     //设置固定等待时间
     void waitTimeFor(Integer time);
+
 
     //关闭所有窗口
     void close();
 
+
     //关闭当前窗口
     void closeCurrent();
+
 
     //点击某个元素
     void click(WebElement element);
 
-    //通过By来点击某个元素
     void click(By by);
 
+    void click(String id);
 
-    void click(String nameOrId);
+    void jQueryClick(String cssSelecter);
+
+
+    //输入
+    void sendKeys(By by, CharSequence keys);
+
+    void sendKeys(String messages, By by, CharSequence keys);
+
+
+    //鼠标移到元素上
+    void hoverOver(By by);
+
+    void hoverOver(WebElement element);
+
+    void hoverOver(String id);
+
+
 
 
     //通过By查找单个Element
@@ -97,12 +127,26 @@ public interface Browser {
     List<WebElement> findElements(String nameOrClassName);
 
 
-
+    //获取当前的Driver
     WebDriver getDriver();
 
 
-    //
-    Boolean elementIsVisible(By by);
+    //判断元素是否显示
+    Boolean elementVisible(By by);
+
+    Boolean elementVisible(WebElement element);
+
+    Boolean elementIdVisible(String id);
+
+
+    /**
+     * 判断元素是否存在
+     * @param by 元素的By值
+     * @return  返回一个布尔值
+     */
+    Boolean elementPresent(By by);
+
+    Boolean elementPresent(String id);
 
 
 
@@ -121,6 +165,14 @@ public interface Browser {
 
     WebElement waitForElementsVisible(By by );
 
+    WebElement waitForElementsVisible(String elementDescription,WebElement element,int waitTimeOut);
+
+    WebElement waitForElementsVisible(String elementDescription,WebElement element);
+
+    WebElement waitForElementsVisible(WebElement element,int waitTimeOut);
+
+    WebElement waitForElementsVisible(WebElement element);
+
 
 
     /**
@@ -138,17 +190,8 @@ public interface Browser {
 
     WebElement waitForElementsPresent(By by);
 
-    /**
-     * 判断元素是否存在
-     * @param by 元素的By值
-     * @return  返回一个布尔值
-     */
-    Boolean elementIsPresent(By by);
 
 
-    Object executeScript(String script);
-
-    String executeScriptGetValue(String script);
 
 
 

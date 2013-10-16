@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Selenium2_Test.iml" afterPath="$PROJECT_DIR$/Selenium2_Test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\start\BaseTest.java" afterPath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\start\BaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="D:\Selenium\Selenium2_Test\src\test\java\pageModel\Search.java" afterPath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\pageModel\search\Search.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gordon/s2_test/Test_Main.java" afterPath="$PROJECT_DIR$/src/test/java/com/gordon/s2_test/Test_Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="D:\Test_Space\Sleneium2_Test\trunk\chromedriver.log" afterPath="D:\Test_Space\Sleneium2_Test\trunk\chromedriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Selenium2_Test.iml" afterPath="$PROJECT_DIR$/Selenium2_Test.iml" />
+      <change type="MODIFICATION" beforePath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\start\BaseTest.java" afterPath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\start\BaseTest.java" />
+      <change type="MOVED" beforePath="D:\Selenium\Selenium2_Test\src\test\java\pageModel\Search.java" afterPath="D:\Work_Space\Selenium\Selenium2_Test\src\test\java\pageModel\search\Search.java" />
     </list>
     <ignored path="Selenium2_Test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381225350452" ignored="false" />
-    <file path="/BaseDriver.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381305327620" ignored="false" />
-    <file path="/Browser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381305362314" ignored="false" />
+    <file path="/BaseDriver.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381918922843" ignored="false" />
+    <file path="/Browser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381918886477" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/function/browsers/window/IWindow.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380268314826" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/function/browsers/window/page/Window.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380268892871" ignored="false" />
-    <file path="D:/Test_Space/s-tea3.0-master/LittleMM/src/main/java/com/github/lmm/browser/BaseBrowser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380273618100" ignored="false" />
+    <file path="$PROJECT_DIR$/../../s-tea3.0-master/LittleMM/src/main/java/com/github/lmm/browser/BaseBrowser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380273618100" ignored="false" />
     <file path="/BaseBrowser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380273615869" ignored="false" />
     <file path="/EBrowser.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1380419355915" ignored="false" />
     <file path="$PROJECT_DIR$/../web_test/nokiaMapsTests/src/main/java/com/nokia/maps/functionalcommons/webdriver/WebDriverFactory.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381296019747" ignored="false" />
@@ -34,13 +34,17 @@
     <file path="/InternetExplorer.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381201979351" ignored="false" />
     <file path="/pom.xml" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381221394553" ignored="false" />
     <file path="/README.txt" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381212736167" ignored="false" />
-    <file path="D:/Test_Space/Maven_Test/tests/pom.xml" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381222505006" ignored="false" />
-    <file path="D:/Test_Space/Maven_Test/tests/src/test/java/com/gordon/app/Test.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381222409279" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Maven_Test/tests/pom.xml" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381222505006" ignored="false" />
+    <file path="$PROJECT_DIR$/../../Maven_Test/tests/src/test/java/com/gordon/app/Test.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381222409279" ignored="false" />
     <file path="/Test.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381221180395" ignored="false" />
     <file path="/log4j.properties" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381218710859" ignored="false" />
-    <file path="/Test_Main.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381304596171" ignored="false" />
+    <file path="/Test_Main.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381907795249" ignored="false" />
     <file path="/PageFactory.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381288118565" ignored="false" />
     <file path="/Login.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381288237761" ignored="false" />
+    <file path="D:/Work_Space/Selenium/web_test/nokiaMapsTests-Chrome/src/test/java/com/nokia/maps/jbehaveSteps/UserSessionSteps.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381571090636" ignored="false" />
+    <file path="/UserSessionSteps.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381568817599" ignored="false" />
+    <file path="D:/Work_Space/Selenium/web_test/nokiaMapsTests-Chrome/src/test/resources/test-stories/login.story" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381569341319" ignored="false" />
+    <file path="D:/Work_Space/Selenium/web_test/nokiaMapsTests-Chrome/src/test/java/com/nokia/maps/JBehaveTestRunner.java" changelist="679ad9d1-4b42-4fad-9529-30bd7fdfd63c" time="1381569420103" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -91,7 +96,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -101,10 +105,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConfigBinary.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigBinary.java">
+      <file leaf-file-name="BaseDriver.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/BaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="15" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
+            <state line="569" column="82" selection-start="15047" selection-end="15047" vertical-scroll-proportion="0.7680098">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Browser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="25" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEBootStrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/IEBootStrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="77" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="12" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FireFox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/FireFox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,78 +153,8 @@
       <file leaf-file-name="WebDriverFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="92" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDriver.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/BaseDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="480" column="78" selection-start="13015" selection-end="13015" vertical-scroll-proportion="0.61518985">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6760#7100#0" expanded="true" />
-                <element signature="e#7085#7086#0" expanded="true" />
-                <element signature="e#7906#8231#0" expanded="true" />
-                <element signature="e#8212#8213#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Browser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Browser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="97" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-11.6">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/Test_Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="99" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+            <state line="55" column="29" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/PageFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="47" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FireFox.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/FireFox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -192,10 +162,26 @@
       <file leaf-file-name="Chrome.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Chrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="25" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigBinary.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigBinary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="74" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChromeBootStrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/ChromeBootStrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,10 +189,8 @@
       <file leaf-file-name="InternetExplorer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/InternetExplorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="87" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="14" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -221,22 +205,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/function/browsers/Browser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/function/browsers/BaseDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigBinary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/InternetExplorer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/IEBootStrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/FireFox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Chrome.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/ChromeBootStrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/PageFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigProfile.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/gordon/s2_test/Test_Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/BaseDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Chrome.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Browser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/BaseDriver.java" />
       </list>
     </option>
   </component>
@@ -282,16 +266,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,7 +281,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,7 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -342,7 +317,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="s2_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -372,7 +377,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="s2_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -398,7 +433,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configfile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chrome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -424,7 +519,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -454,7 +549,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Selenium2_Test" />
+              <option name="myItemId" value="trunk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -480,7 +575,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -670,33 +774,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1032" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39876544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36006546" sideWeight="0.46309525" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32592592" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24068071" sideWeight="0.22805017" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068071" sideWeight="0.6348123" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3651877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068071" sideWeight="0.5199544" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48004562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32592592" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -765,141 +869,111 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.35.0/selenium-api-2.35.0.jar!/org/openqa/selenium/Cookie.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="54" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0">
+        <state line="20" column="11" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.35.0/selenium-api-2.35.0-sources.jar!/org/openqa/selenium/Cookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="15" selection-start="2529" selection-end="2535" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/tests/LoginTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.33.0/selenium-api-2.33.0-sources.jar!/org/openqa/selenium/WebDriver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.35.0/selenium-api-2.35.0-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="87" selection-start="10321" selection-end="10321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/IEBootStrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/ChromeBootStrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="73" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="15" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/PageFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/page/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+        <state line="30" column="17" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.33293268">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gordon/s2_test/Test_Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="99" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="202" column="36" selection-start="7280" selection-end="7280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/ConfigBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="74" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/IEBootStrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="77" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/WebDriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="92" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="55" column="29" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/webdriver/ChromeBootStrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/InternetExplorer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="87" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="14" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/FireFox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="14" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Chrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="25" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="97" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-11.6">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="59" column="25" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gordon/s2_test/browsers/BaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="480" column="78" selection-start="13015" selection-end="13015" vertical-scroll-proportion="0.61518985">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6760#7100#0" expanded="true" />
-            <element signature="e#7085#7086#0" expanded="true" />
-            <element signature="e#7906#8231#0" expanded="true" />
-            <element signature="e#8212#8213#0" expanded="true" />
-          </folding>
+        <state line="569" column="82" selection-start="15047" selection-end="15047" vertical-scroll-proportion="0.7680098">
+          <folding />
         </state>
       </provider>
     </entry>

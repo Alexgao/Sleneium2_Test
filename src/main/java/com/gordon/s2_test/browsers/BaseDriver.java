@@ -2,6 +2,7 @@ package com.gordon.s2_test.browsers;
 
 import com.gordon.s2_test.ConfigProfile;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,8 +57,8 @@ public class BaseDriver implements Browser {
     @Override
     public void setWindowSize(final int width,final int height) {
 
-        int maxWidth = Integer.parseInt(runJS().executeScript("return screen.availWidth;").toString());
-        int maxHeight = Integer.parseInt(runJS().executeScript("return screen.availHeight;").toString());
+        int maxWidth = Integer.parseInt(executeScript("return screen.availWidth;").toString());
+        int maxHeight = Integer.parseInt(executeScript("return screen.availHeight;").toString());
 
         if(width > maxWidth || height > maxHeight){
             maxWindow();
@@ -102,11 +103,11 @@ public class BaseDriver implements Browser {
      *
      * 点击页面某个元素
      *
-     * @param element
+     * @param element 被点击元素
      */
     @Override
     public void click(WebElement element){
-        if (element != null || !element.toString().equals("")){
+        if (element != null){
             element.click();
         }else {
             logger.warn("警告，给出的指定元素为空。");
@@ -117,22 +118,53 @@ public class BaseDriver implements Browser {
      *
      * 点击页面某个元素
      *
-     * @param by
+     * @param by  被点击元素By
      */
     @Override
     public void click(By by){
-        WebElement element = this.webDriver.findElement(by);
-        if (!element.toString().equals("")||element != null){
-            element.click();
-        }else {
-            logger.error("没有找到指定元素，{}",by.toString());
-        }
+        click(findElement(by));
 
     }
 
     @Override
     public void click(String nameOrId) {
-        findElement(nameOrId).click();
+        click(findElement(nameOrId));
+    }
+
+    @Override
+    public void jQueryClick(String cssSelector) {
+        executeScript(String.format("$('%s').mousedown(); setTimeout(function(){ $('%s').mouseup() }, 100)", cssSelector, cssSelector));
+        waitTimeFor(200);
+    }
+
+    @Override
+    public void sendKeys(By by, CharSequence keys) {
+        sendKeys("",by,keys);
+    }
+
+    @Override
+    public void sendKeys(String messages, By by, CharSequence keys) {
+        try {
+            findElement(by).sendKeys(keys);
+        }catch (Exception e){
+            System.out.print(messages+"输入错误。");
+        }
+
+    }
+
+    @Override
+    public void hoverOver(By by) {
+        hoverOver(findElement(by));
+    }
+
+    @Override
+    public void hoverOver(WebElement element) {
+        new Actions(getWebDriver()).moveToElement(element);
+    }
+
+    @Override
+    public void hoverOver(String id) {
+        hoverOver(findElement(id));
     }
 
     /**
@@ -143,7 +175,7 @@ public class BaseDriver implements Browser {
     @Override
     public WebElement findElement(By by){
         WebElement element = this.webDriver.findElement(by);
-        if (element.toString().equals("")||element == null){
+        if (element == null){
             logger.error("错误，没有找到指定的元素，{}",by.toString());
             return null;
         }
@@ -157,11 +189,11 @@ public class BaseDriver implements Browser {
      */
     @Override
     public WebElement findElement(String nameOrId) {
-        WebElement element=this.webDriver.findElement(By.id(nameOrId));
-        if (element!=null||element.equals("")){
+        WebElement element= findElement(By.id(nameOrId));
+        if (element!=null){
             return element;
         }else {
-            List<WebElement> elements = this.webDriver.findElements(By.name(nameOrId));
+            List<WebElement> elements = findElements(By.name(nameOrId));
             if (elements.size()>1){
                 logger.warn("警告，你给定的\"name\"为\"{}\"的元素不止一个，我们将默认返回第一个给你。",nameOrId);
                 return elements.get(0);
@@ -178,8 +210,8 @@ public class BaseDriver implements Browser {
 
     /**
      * 通过By获取Web元素
-     * @param by
-     * @return
+     * @param by 获取多个元素的By
+     * @return  一个元素集合
      */
     @Override
     public List<WebElement> findElements(By by){
@@ -200,9 +232,9 @@ public class BaseDriver implements Browser {
      */
     @Override
     public List<WebElement> findElements(String nameOrClassName) {
-        List<WebElement> elements = this.webDriver.findElements(By.name(nameOrClassName));
+        List<WebElement> elements = findElements(By.name(nameOrClassName));
         if (elements.size()<1||elements.get(0)==null){
-            List<WebElement> elements1 = this.webDriver.findElements(By.className(nameOrClassName));
+            List<WebElement> elements1 = findElements(By.className(nameOrClassName));
             if (elements1.size() < 1 || elements1.get(0) == null){
                 logger.error("错误，你所给出的Name或者ClassName为：{}的元素并不存在。",nameOrClassName);
                 return null;
@@ -225,15 +257,30 @@ public class BaseDriver implements Browser {
         return getWebDriver();
     }
 
+
     @Override
-    public Boolean elementIsVisible(By by) {
+    public Boolean elementIdVisible(String id) {
+        return elementVisible(findElement(id));
+    }
+
+    @Override
+    public Boolean elementVisible(By by) {
         List<WebElement> webElements = findElements(by);
         try{
-            return webElements.size() > 0 && webElements.get(0).isDisplayed();
+            return webElements.size() > 0 && elementVisible(webElements.get(0));
         }catch (Exception e){
-            logger.error("错误，元素不存在，{}为：{}",by.getClass().getSimpleName(),by.toString());
+            logger.error("错误，元素不存在，为：{}",by.toString());
             return false;
         }
+    }
+
+    @Override
+    public Boolean elementVisible(WebElement element) {
+        if (element == null) {
+            logger.error("错误，判断元素为空。");
+            return false;
+        }
+        return element.isDisplayed();
     }
 
     /**
@@ -263,12 +310,39 @@ public class BaseDriver implements Browser {
 
     @Override
     public WebElement waitForElementsVisible(final By by, final int waitTimeOut) {
-        return waitForElementsVisible(by.getClass().getSimpleName()+"为："+by.toString()+"的元素,",by,waitTimeOut);
+        return waitForElementsVisible(by.toString()+"的元素,",by,waitTimeOut);
     }
 
     @Override
     public WebElement waitForElementsVisible(By by) {
-        return waitForElementsVisible(by.getClass().getSimpleName()+"为："+by.toString()+"的元素,",by,0);
+        return waitForElementsVisible(by.toString()+"的元素,",by,0);
+    }
+
+    @Override
+    public WebElement waitForElementsVisible(String elementDescription,final WebElement element, int waitTimeOut) {
+        return waitForCondition(elementDescription+"不显示。",waitTimeOut,
+               new ExpectedCondition<WebElement>() {
+                   @Override
+                   public WebElement apply(final WebDriver driver) {
+                       return element.isDisplayed() ? element :null;
+                   }
+               }
+         );
+    }
+
+    @Override
+    public WebElement waitForElementsVisible(String elementDescription, WebElement element) {
+        return waitForElementsVisible(elementDescription,element,0);
+    }
+
+    @Override
+    public WebElement waitForElementsVisible(WebElement element, int waitTimeOut) {
+        return waitForElementsVisible("",element,waitTimeOut);
+    }
+
+    @Override
+    public WebElement waitForElementsVisible(WebElement element) {
+        return waitForElementsVisible("",element,0);
     }
 
     @Override
@@ -291,12 +365,12 @@ public class BaseDriver implements Browser {
 
     @Override
     public WebElement waitForElementsPresent(By by, int waitTimeOut) {
-        return waitForElementsPresent(by.getClass().getSimpleName()+"为："+by.toString()+"的元素,",by,waitTimeOut);
+        return waitForElementsPresent(by.toString()+"的元素,",by,waitTimeOut);
     }
 
     @Override
     public WebElement waitForElementsPresent(By by) {
-        return waitForElementsPresent(by.getClass().getSimpleName()+"为："+by.toString()+"的元素,",by,0);
+        return waitForElementsPresent(by.toString()+"的元素,",by,0);
     }
 
 
@@ -306,14 +380,19 @@ public class BaseDriver implements Browser {
      * @return  返回一个布尔值
      */
     @Override
-    public Boolean elementIsPresent(By by) {
-        return this.webDriver.findElements(by).size()>0;
+    public Boolean elementPresent(By by) {
+        return findElements(by).size()>0;
 
     }
 
     @Override
+    public Boolean elementPresent(String id) {
+        return findElement(id) != null;
+    }
+
+    @Override
     public Object executeScript(String script) {
-        return runJS().executeScript(script);
+        return js().executeScript(script);
     }
 
     @Override
@@ -422,7 +501,7 @@ public class BaseDriver implements Browser {
      *
      * **/
     @Override
-    public JavascriptExecutor runJS() {
+    public JavascriptExecutor js() {
         try {
             JavascriptExecutor js = (JavascriptExecutor)this.webDriver;
             return js;
@@ -449,6 +528,19 @@ public class BaseDriver implements Browser {
     public void clearCookies(Cookie cookie) {
         this.webDriver.manage().deleteCookie(cookie);
         logger.info("清除Cookie为：{}",cookie.toString());
+    }
+
+    @Override
+    public Set<Cookie> getCookies() {
+        logger.info("获取当前域下所有的Cookie");
+        return this.webDriver.manage().getCookies();
+
+    }
+
+    @Override
+    public Cookie getCookieNamed(String cookieName) {
+        logger.info("通过CookieName获取指定Cookie。");
+        return this.webDriver.manage().getCookieNamed(cookieName);
     }
 
 
