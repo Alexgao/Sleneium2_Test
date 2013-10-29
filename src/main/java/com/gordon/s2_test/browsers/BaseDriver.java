@@ -107,7 +107,7 @@ public class BaseDriver implements Browser {
      */
     @Override
     public void click(WebElement element){
-        if (element != null){
+        if (element != null && element.isDisplayed()){
             element.click();
         }else {
             logger.warn("警告，给出的指定元素为空。");
@@ -139,17 +139,27 @@ public class BaseDriver implements Browser {
 
     @Override
     public void sendKeys(By by, CharSequence keys) {
-        sendKeys("",by,keys);
+        sendKeys("",findElement(by),keys);
     }
 
     @Override
     public void sendKeys(String messages, By by, CharSequence keys) {
-        try {
-            findElement(by).sendKeys(keys);
-        }catch (Exception e){
-            System.out.print(messages+"输入错误。");
-        }
+        sendKeys(messages,findElement(by),keys);
+    }
 
+    @Override
+    public void sendKeys(String messages, WebElement element, CharSequence keys) {
+        try {
+            element.clear();
+            element.sendKeys(keys);
+        }catch (Exception e){
+            System.err.print(messages+"执行错误。");
+        }
+    }
+
+    @Override
+    public void sendKeys(WebElement element, CharSequence keys) {
+        sendKeys("",element,keys);
     }
 
     @Override
@@ -174,6 +184,7 @@ public class BaseDriver implements Browser {
      */
     @Override
     public WebElement findElement(By by){
+        waitForElementsPresent(by);
         WebElement element = this.webDriver.findElement(by);
         if (element == null){
             logger.error("错误，没有找到指定的元素，{}",by.toString());
@@ -318,32 +329,32 @@ public class BaseDriver implements Browser {
         return waitForElementsVisible(by.toString()+"的元素,",by,0);
     }
 
-    @Override
-    public WebElement waitForElementsVisible(String elementDescription,final WebElement element, int waitTimeOut) {
-        return waitForCondition(elementDescription+"不显示。",waitTimeOut,
-               new ExpectedCondition<WebElement>() {
-                   @Override
-                   public WebElement apply(final WebDriver driver) {
-                       return element.isDisplayed() ? element :null;
-                   }
-               }
-         );
-    }
-
-    @Override
-    public WebElement waitForElementsVisible(String elementDescription, WebElement element) {
-        return waitForElementsVisible(elementDescription,element,0);
-    }
-
-    @Override
-    public WebElement waitForElementsVisible(WebElement element, int waitTimeOut) {
-        return waitForElementsVisible("",element,waitTimeOut);
-    }
-
-    @Override
-    public WebElement waitForElementsVisible(WebElement element) {
-        return waitForElementsVisible("",element,0);
-    }
+//    @Override
+//    public WebElement waitForElementsVisible(String elementDescription,final WebElement element, int waitTimeOut) {
+//        return waitForCondition(elementDescription+"不显示。",waitTimeOut,
+//               new ExpectedCondition<WebElement>() {
+//                   @Override
+//                   public WebElement apply(final WebDriver driver) {
+//                       return element.isDisplayed() ? element :null;
+//                   }
+//               }
+//         );
+//    }
+//
+//    @Override
+//    public WebElement waitForElementsVisible(String elementDescription, WebElement element) {
+//        return waitForElementsVisible(elementDescription,element,0);
+//    }
+//
+//    @Override
+//    public WebElement waitForElementsVisible(WebElement element, int waitTimeOut) {
+//        return waitForElementsVisible("",element,waitTimeOut);
+//    }
+//
+//    @Override
+//    public WebElement waitForElementsVisible(WebElement element) {
+//        return waitForElementsVisible("",element,0);
+//    }
 
     @Override
     public WebElement waitForElementsPresent(final String elementDescription,final By by,final int waitTimeOut) {

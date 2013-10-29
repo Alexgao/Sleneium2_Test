@@ -30,7 +30,9 @@ import com.gordon.s2_test.browsers.Chrome;
 import com.gordon.s2_test.browsers.FireFox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 import java.util.Set;
@@ -162,25 +164,58 @@ public class Test_Main {
 //
 //        Thread.sleep(10000);
 //        closeDriver();
-        ConfigBinary configBinary =new ConfigBinary();
-        configBinary.setChromeBinay("D:/Browser/chromedriver.exe");
-
-        Browser chrome = new Chrome();
-        chrome.go("baidu.com");
-        chrome.maxWindow();
-//        System.out.print(chrome.getAllFrames().size());
-
-        chrome.setWindowSize(800,800);
-        chrome.waitTimeFor(5000);
-        chrome.close();
-
+//        ConfigBinary configBinary =new ConfigBinary();
+//        configBinary.setChromeBinay("D:/Browser/chromedriver.exe");
+//
+//        Browser chrome = new Chrome();
+//        chrome.go("baidu.com");
+//        chrome.maxWindow();
+////        System.out.print(chrome.getAllFrames().size());
+//
+//        chrome.setWindowSize(800,800);
+//        chrome.waitTimeFor(5000);
+//        chrome.close();
+        ConfigProfile.remoteDriverURL="http://172.19.67.233:4444/wd/hub";
 //        ConfigBinary binary = new ConfigBinary();
+//
 //        binary.setFireFoxBinay("D:/Browser/Mozilla_Firefox/firefox.exe");
-//        Browser ie = new FireFox();
-//        ie.go("www.baidu.com");
-//        ie.maxWindow();
-//        ie.waitTimeFor(5000);
-//        ie.close();
+//        binary.setChromeBinay("D:/Browser/chromedriver.exe");
+        Browser fireFox = new FireFox();
+        fireFox.maxWindow();
+
+        WebDriver driver = fireFox.getDriver();
+
+
+        fireFox.go("http://heremaps.cn");
+
+//        String js = "document.getElementById('single-topbar').innerHTML=\"<iframe id='testIframe' src='https://account.nokia.com/'></iframe>\"";
+//        fireFox.executeScript("js");
+//        ((JavascriptExecutor)driver).executeScript(js);
+//        driver.switchTo().frame("testIframe");
+        Set<Cookie> cookies = driver.manage().getCookies();
+
+        if (cookies.size()>0)
+            for (Cookie cookie : cookies ) {
+                System.out.println("name+"+cookie.getName()+"\tpath:"+cookie.getPath());
+            }
+//        driver.manage().deleteCookieNamed("NOASC");
+//        driver.manage().addCookie(cookie);
+//        fireFox.refresh();
+//        driver.switchTo().frame("testIframe");
+       driver.manage().getCookies();
+        Set<Cookie> cookies1 = driver.manage().getCookies();
+
+        if (cookies.size()>0)
+            for (Cookie cookie : cookies1 ) {
+                System.out.println("name+"+cookie.getName()+"\tpath:"+cookie.getPath());
+            }
+
+
+        fireFox.waitTimeFor(50000);
+        fireFox.close();
+
+
+
 
 
 

@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
@@ -60,9 +61,14 @@ public class WebDriverFactory{
     private static WebDriver getDriverForCapabilities(final DesiredCapabilities capabilities) {
 //        try{
             WebDriver driver;
-            URL REMOTE_DRIVER_URL =ConfigProfile.remoteDriverURL;
+        URL REMOTE_DRIVER_URL = null;
+        try {
+            REMOTE_DRIVER_URL = ConfigProfile.remoteDriverURL == null? null:new URL(ConfigProfile.remoteDriverURL);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
 
-            final Boolean IS_REMOTE = !(REMOTE_DRIVER_URL == null || REMOTE_DRIVER_URL.equals("")) ;
+        final Boolean IS_REMOTE = !(REMOTE_DRIVER_URL == null || REMOTE_DRIVER_URL.equals("")) ;
 //            if (!REMOTE_DRIVER_URL.contains(".")){
 //                logger.warn("请注意，您所给出的参数 ### remoteDriverURL ### 的值，格式不正确。请检查...");
 //            }

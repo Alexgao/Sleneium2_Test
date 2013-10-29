@@ -102,6 +102,10 @@ public interface Browser {
 
     void sendKeys(String messages, By by, CharSequence keys);
 
+    void sendKeys(String messages, WebElement element, CharSequence keys);
+
+    void sendKeys(WebElement element, CharSequence keys);
+
 
     //鼠标移到元素上
     void hoverOver(By by);
@@ -165,13 +169,13 @@ public interface Browser {
 
     WebElement waitForElementsVisible(By by );
 
-    WebElement waitForElementsVisible(String elementDescription,WebElement element,int waitTimeOut);
-
-    WebElement waitForElementsVisible(String elementDescription,WebElement element);
-
-    WebElement waitForElementsVisible(WebElement element,int waitTimeOut);
-
-    WebElement waitForElementsVisible(WebElement element);
+//    WebElement waitForElementsVisible(String elementDescription,WebElement element,int waitTimeOut);
+//
+//    WebElement waitForElementsVisible(String elementDescription,WebElement element);
+//
+//    WebElement waitForElementsVisible(WebElement element,int waitTimeOut);
+//
+//    WebElement waitForElementsVisible(WebElement element);
 
 
 
